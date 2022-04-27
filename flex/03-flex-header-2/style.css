@@ -12,6 +12,10 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .profile-image {
@@ -27,6 +31,7 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  padding-left: 5px;
 }
 
 button {
@@ -41,8 +46,27 @@ a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 ul {
   list-style-type: none;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 10px;
+  margin-left: 10px;
+  padding: 0;
+}
+
+.left{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.right{
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 10px;
+  padding-right: 5px;
 }
