@@ -10,6 +10,8 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  text-align: center;
+  margin-bottom: 32px;
 }
 
 /* do not edit this footer */
@@ -24,3 +26,37 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+.flex-container{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.flex-img-container{
+  display: flex;
+  flex-flow: row nowrap;
+  row-gap: 82px;
+  padding: 10px;
+}
+
+.img-txt{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  max-width: 200px;
+}
+
+.text{
+  flex-wrap: wrap;
+  text-align: center;
+}
+/*
+- All items are centered on the page (horizontally, not vertically).
+- The title is centered on the page.
+- There is 32px between the title and the 'items.'
+- There is 52px between each item.
+- The items are arranged horizontally on the page.
+- The items are only 200px wide and the text wraps.
+- The item text is centered.
+*/
