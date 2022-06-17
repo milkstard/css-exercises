@@ -45,3 +45,36 @@ body, html {
 .footer {
   background-color: #393f4d;
 }
+
+
+/*start*/
+.container{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr 5fr 1fr;
+  gap: 15px;
+}
+
+.header, .footer{
+  grid-column: span 2;
+}
+
+.sidebar{
+  grid-column: 1/2;
+  grid-row: 2/span 2;
+}
+
+.nav, .article{
+  grid-column: 2/3;
+}
+/*
+
+- The gap is 15px
+- The grid has two columns
+- The grid has four rows
+- The second column is three times larger than the first
+- The third row is five times larger than the others
+- The header and footer elements span across both columns
+- The sidebar element only spans across the first column
+- The nav and article elements span across the second column
+*/
